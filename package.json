@@ -1,0 +1,28 @@
+{
+  "name": "pagescraper",
+  "version": "1.0.0",
+  "description": "Week 18 homework: scrape a page, store articles to a database, then allow user to add notes",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharkman-jhones/Week-18-Homework-Pagescraper.git"
+  },
+  "author": "Armando Morales",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharkman-jhones/Week-18-Homework-Pagescraper/issues"
+  },
+  "homepage": "https://github.com/sharkman-jhones/Week-18-Homework-Pagescraper#readme",
+  "dependencies": {
+    "bluebird": "^3.4.6",
+    "body-parser": "^1.15.2",
+    "cheerio": "^0.22.0",
+    "express": "^4.14.0",
+    "mongoose": "^4.7.2",
+    "morgan": "^1.7.0",
+    "request": "^2.79.0"
+  }
+}
