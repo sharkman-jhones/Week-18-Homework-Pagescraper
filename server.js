@@ -20,7 +20,7 @@ var app = express();
 // Use morgan and body parser with our app
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({
-	extended: false;
+	extended: false
 }));
 
 app.use(express.static("public"));
@@ -34,6 +34,10 @@ db.on("error", function(error){
 
 db.once("open", function(){
 	console.log("Mongoose connection successful.")
+})
+
+app.get("/", function(req, res){
+	res.send(index.html);
 })
 
 console.log("Looking for the title and thumbnail of each article")
@@ -55,3 +59,7 @@ request("https://news.google.com/news/section?cf=all&pz=1&ned=us&topic=tc&siidp=
 
 	console.log(result);
 });
+
+app.listen(3000, function(){
+	console.log("App running on port 3000.")
+})
